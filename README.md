@@ -63,7 +63,7 @@ Before you proceed with the setup, make sure to have Python and Anaconda install
 # Usage
 
 ### 1.	Pre-processing Script (Optional):
-### 1.1 Reading FASTA files
+#### 1.1 Reading FASTA files
 The script `Reading_ngs_file.py` processes FASTA files to count valid variants. A valid variant must:
  
   * Align with the BPTI wild-type amino acid sequence.
@@ -72,13 +72,13 @@ The script `Reading_ngs_file.py` processes FASTA files to count valid variants. 
 Output: 
   * The script merges data from four affinity gates sequencing FASTA files into csv file called "df_summary_raw".
 
-### 1.2 Generating all single- and double-mutation variants
+#### 1.2 Generating all single- and double-mutation variants
 The script `all_variants_options.py` generates a summary of all possible variants in the library, including the wild type, single mutants, and double mutants. For each variant, the script records the mutation description, the sequence of the 12 relevant positions, and the full-length protein sequence.
 
 Output:
   * A csv file called "df_all_variant_0-2_mutations_long" that summarizing all variants, including their mutation notation, 12-position sequence, and full-length sequence.
 
-### 1.3 Generating ESM embeddings for the full-length protein and avg. across twelve position
+#### 1.3 Generating ESM embeddings for the full-length protein and avg. across twelve position
 The script `model_ESM_640_param.py` generates sequence embeddings for each full-length protein variant using the ESM-2 model. For each variant, the script extracts the embeddings of the 12 relevant positions, averages them, and saves the resulting 640-parameter representation.
 
 Output:
