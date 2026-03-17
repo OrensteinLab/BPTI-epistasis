@@ -78,7 +78,8 @@ The script `all_variants_options.py` generates a summary of all possible variant
 Output:
   * A csv file called "df_all_variant_0-2_mutations_long" that summarizing all variants, including their mutation notation, 12-position sequence, and full-length sequence.
 
-### 1.3 The script `model_ESM_640_param.py` generates sequence embeddings for each full-length protein variant using the ESM-2 model. For each variant, the script extracts the embeddings of the 12 relevant positions, averages them, and saves the resulting 640-parameter representation.
+### 1.3 Generating ESM embeddings for the full-length protein and avg. across twelve position
+The script `model_ESM_640_param.py` generates sequence embeddings for each full-length protein variant using the ESM-2 model. For each variant, the script extracts the embeddings of the 12 relevant positions, averages them, and saves the resulting 640-parameter representation.
 
 Output:
   * A file called "X_esm_delta_mean_all_pos_640_par" containing the averaged embeddings for all variants (wild type, single mutants, and double mutants).
