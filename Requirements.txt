@@ -1,0 +1,11 @@
+tensorflow==2.15.0
+pandas==2.1.4
+numpy==1.26.2
+scikit-learn==1.3.2
+scipy==1.11.4
+seaborn==0.13.2
+openpyxl
+torch
+torchvision
+torchaudio
+fair-esm
